@@ -26,10 +26,29 @@
 
 // // 4. Створити маис об'єктів book з наступними полями  - назва, кількість сторінок, жанр, автори. Вивести кожну книгу як окремий об'єкт
 //
-//
-// let library = [[`Harry Potter`, 340, `fantasy`, `J. K. Rowling`], [`Harry Potter`, 310, `fantasy`, `J. K. Rowling`], 3, 4];
-// console.log(library[0]);
-// console.log(library[1]);
+let library =[
+    {
+        title:`Відьмак`,
+        pages:288,
+        genre:`fantasy`,
+        author:`Анджей Сапковський`
+    },
+    {
+        title:`Людина в пошуках справжнього сенсу`,
+        pages:160,
+        genre:`Психологія`,
+        author:`Вiктор Франкл`
+    },
+    {
+        title:`Harry Potter`,
+        pages:340,
+        genre:`fantasy`,
+        author:`J. K. Rowling`
+    }
+]
+console.log(library[0]);
+console.log(library[1]);
+console.log(library[2]);
 
 // // 5. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
 // // Значення площі зберігати в змінній s.
@@ -53,9 +72,9 @@
 // 7. У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).
 // Знайдіть гіпотенузу k за теоремою Піфагора (потрібно використовувати функцію Math.pow (число, ступінь) або оператор зведення в ступінь **).
 
-let n =3;
-let m =4;
-let k = n**2 + m**2;
-console.log(k);
+// let n =3;
+// let m =4;
+// let k = n**2 + m**2;
+// console.log(k);
 
 
