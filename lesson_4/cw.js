@@ -83,6 +83,39 @@
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
 
 
+// function maxNumber (arg){
+//     let max=arguments[0];
+//     let min =arguments[0];
+//     for (const element of arguments) {
+//         if(element>max){
+//             max=element;
+//         }
+//         if(element<min){
+//             min=element;
+//         }
+//     }
+//     console.log(max)
+//     return min;
+// }
+// document.write(maxNumber(9,7,64,21,667,643,12,45,91))
+
+// function minMax() {
+//     let min = arguments[0];
+//     let max = arguments[0];
+//     for (const element of arguments) {
+//         if (element > max) {
+//             max = element;
+//         }
+//         if (element < min) {
+//             min = element;
+//         }
+//     }
+//     console.log("max ", max);
+//     return min;
+// }
+// document.write('Мінімальне число з введених: ' + minMax(100, 20, 3, 100, 2021))
+
+
 // - створити функцію яка заповнює масив рандомними числами
 
 // function randArray(array){
@@ -98,28 +131,43 @@
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
 
-function randArray(array, limit) {
-    let emptArr = [];
-    for (let i = 1; i <= array; i++) {
-        emptArr.push(Math.floor(Math.random() * limit))
-    }
-    return emptArr;
-}
-
-document.write(randArray(15, 400))
-console.log(randArray(15, 230))
+// function randArray(array, limit) {
+//     let emptArr = [];
+//     for (let i = 1; i <= array; i++) {
+//         emptArr.push(Math.floor(Math.random() * limit))
+//     }
+//     return emptArr;
+// }
+//
+// document.write(randArray(15, 400))
+// console.log(randArray(15, 230))
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 
-let arr = [1, 2, 3]
+let mas = [4, 2, 3]
 
-function arrayRevers(array) {
-    let rev = [];
-    for (let i = 0, re=array.length-1; i < array.length; i++,re--) {
-        array[re]=rev
+// function reverse(array) {
+//     let arr = [];
+//     let ri = array.length - 1;
+//     for (let arrayElement of array){
+//         arr[ri]=arrayElement;
+//         ri--;
+//     }
+//     return arr;
+// }
+//
+// console.log(reverse(mas))
+
+function revers(array) {
+    let arr = [];
+    let ri = array.length - 1;
+    for (let i = 0; i <ri.length; i--) {
+        arr[ri]=i
     }
-    }
-console.log(arrayRevers(arr))
+    return arr
+}
+console.log(mas)
+
 
 
 
