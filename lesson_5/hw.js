@@ -1,28 +1,28 @@
-// // - створити функцію яка обчислює та повертає площу прямокутника
-//
-// let sPriamokutn = (a, b) => a * b;
-// document.write('Площа прямокутника:' + sPriamokutn(2, 2));
-// // - створити функцію яка обчислює та повертає площу кола
-//
-// const PI = 3.14;
-// let sCircle = (r) => PI * r ** 2;
-// document.write(`<br>Площа кола:` + sCircle(2));
-//
-// // - створити функцію яка обчислює та повертає площу циліндру
-//
-// let s = (r, h) => 2 * PI * r * h;
-// document.write(`<br>Площа бокової поверхні циліндра: ` + s(2, 10));
-//
-// // - створити функцію яка приймає масив та виводить кожен його елемент
-//
-// let arr = [1, 5, 3, 7, 4, 7, 9];
-// let iterator = (array) => {
-//     for (let arrayElement of array) {
-//         document.write(`<br>` + arrayElement);
-//         console.log(arrayElement);
-//     }
-// }
-// iterator(arr)
+// - створити функцію яка обчислює та повертає площу прямокутника
+
+let sPriamokutn = (a, b) => a * b;
+document.write('Площа прямокутника:' + sPriamokutn(2, 2));
+// - створити функцію яка обчислює та повертає площу кола
+
+const PI = 3.14;
+let sCircle = (r) => PI * r ** 2;
+document.write(`<br>Площа кола:` + sCircle(2));
+
+// - створити функцію яка обчислює та повертає площу циліндру
+
+let s = (r, h) => 2 * PI * r * h;
+document.write(`<br>Площа бокової поверхні циліндра: ` + s(2, 10));
+
+// - створити функцію яка приймає масив та виводить кожен його елемент
+
+let arr = [1, 6, 3, 8, 5, 9, 7];
+let iterator = (array) => {
+    for (let arrayElement of array) {
+        document.write(`<br>` + arrayElement);
+        console.log(arrayElement);
+    }
+}
+iterator(arr)
 // // - створити функцію яка  створює параграф з текстом. Текст задати через аргумент
 
 // let paragraph = (text) => {

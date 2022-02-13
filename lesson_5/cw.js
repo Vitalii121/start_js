@@ -120,17 +120,17 @@
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 
-let mas = [1, 2, 3]
-
-let reverse=(array)=>{
-    let arr = [];
-    let ri = array.length - 1;
-    for (let arrayElement of array){
-        arr[ri]=arrayElement;
-        ri--;
-    }
-    return arr;
-}
-
-document.write(reverse(mas))
+// let mas = [1, 2, 3]
+//
+// let reverse=(array)=>{
+//     let arr = [];
+//     let ri = array.length - 1;
+//     for (let arrayElement of array){
+//         arr[ri]=arrayElement;
+//         ri--;
+//     }
+//     return arr;
+// }
+//
+// document.write(reverse(mas))
 
