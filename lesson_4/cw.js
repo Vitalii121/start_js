@@ -144,29 +144,20 @@
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 
-let mas = [4, 2, 3]
+let mas = [1, 2, 3]
 
-// function reverse(array) {
-//     let arr = [];
-//     let ri = array.length - 1;
-//     for (let arrayElement of array){
-//         arr[ri]=arrayElement;
-//         ri--;
-//     }
-//     return arr;
-// }
-//
-// console.log(reverse(mas))
-
-function revers(array) {
+function reverse(array) {
     let arr = [];
     let ri = array.length - 1;
-    for (let i = 0; i <ri.length; i--) {
-        arr[ri]=i
+    for (let arrayElement of array){
+        arr[ri]=arrayElement;
+        ri--;
     }
-    return arr
+    return arr;
 }
-console.log(mas)
+
+console.log(reverse(mas))
+
 
 
 
