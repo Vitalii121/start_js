@@ -79,23 +79,58 @@
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
 
-let maxMin = (arg) => {
-    let max = arguments[0];
-    let min = arguments[0];
-    for (const element of arguments) {
-        if (element > max) {
-            max = element;
-        }
-        if (element < min) {
-            min = element;
-        }
-    }
-    console.log(max);
-    return min;
-}
-document.write(maxMin(9, 7, 64, 21, 667, 643, 12, 45, 91));
+// let maxMin = (...arg) => {
+//     let min = arg[0];
+//     let max = arg[0];
+//     for (const element of arg) {
+//         if (element > max) {
+//             max = element;
+//         }
+//         if (element < min) {
+//             min = element;
+//         }
+//     }
+//     console.log(max);
+//     return min;
+// }
+// document.write(maxMin(9, 16, 64, 21, 667, 643, 12, 45, 91));
+//
+// // - створити функцію яка заповнює масив рандомними числами
+//
+// let randArray = (array) => {
+//     let emptyArr = [];
+//     for (let i = 1; i < array; i++) {
+//         emptyArr.push(Math.round(Math.random() * 100));
+//     }
+//     return emptyArr
+// }
+// document.write(randArray(10))
 
-// - створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+
+// let randArray = (array,limit) => {
+//     let emptyArr = [];
+//     for (let i = 1; i < array; i++) {
+//         emptyArr.push(Math.round(Math.random() * limit));
+//     }
+//     return emptyArr
+// }
+// document.write(randArray(50,12))
+
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+
+let mas = [1, 2, 3]
+
+let reverse=(array)=>{
+    let arr = [];
+    let ri = array.length - 1;
+    for (let arrayElement of array){
+        arr[ri]=arrayElement;
+        ri--;
+    }
+    return arr;
+}
+
+document.write(reverse(mas))
+
