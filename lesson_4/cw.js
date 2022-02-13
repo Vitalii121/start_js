@@ -70,7 +70,7 @@
 
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 
-// let arr = [5, 10, 15, 30, 20, 5];
+// let arr = [5, 10, 15, 30, 20, 5,124];
 // function sumArr(array){
 //     let elem =0;
 //     for (const arrayElement of array) {
@@ -83,38 +83,21 @@
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
 
 
-// function maxNumber (arg){
-//     let max=arguments[0];
-//     let min =arguments[0];
-//     for (const element of arguments) {
-//         if(element>max){
-//             max=element;
-//         }
-//         if(element<min){
-//             min=element;
-//         }
-//     }
-//     console.log(max)
-//     return min;
-// }
-// document.write(maxNumber(9,7,64,21,667,643,12,45,91))
-
-// function minMax() {
-//     let min = arguments[0];
-//     let max = arguments[0];
-//     for (const element of arguments) {
-//         if (element > max) {
-//             max = element;
-//         }
-//         if (element < min) {
-//             min = element;
-//         }
-//     }
-//     console.log("max ", max);
-//     return min;
-// }
-// document.write('Мінімальне число з введених: ' + minMax(100, 20, 3, 100, 2021))
-
+function maxNumber (arg){
+    let max=arguments[0];
+    let min =arguments[0];
+    for (const element of arguments) {
+        if(element>max){
+            max=element;
+        }
+        if(element<min){
+            min=element;
+        }
+    }
+    console.log(max)
+    return min;
+}
+document.write(maxNumber(9,7,64,21,667,643,12,45,91))
 
 // - створити функцію яка заповнює масив рандомними числами
 
