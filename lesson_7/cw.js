@@ -132,15 +132,15 @@ let wasasdas = new Princ('Loci', 37, 38);
 let findPopelushku = (arrPopelushka, wasasdas) => {
     for (const firstElement of arrPopelushka) {
         if (firstElement.fitshoes === wasasdas.findshoes) {
-            return `youre popelushku to find, her name is ${firstElement.name}`
+            return `your popelushku to find, her name is ${firstElement.name}`
         }
     }
 }
-// console.log(findPopelushku(arrPopelushka, wasasdas));
+console.log(findPopelushku(arrPopelushka, wasasdas));
 
 
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 
-let second=arrPopelushka.find((firstElement)=>firstElement.fitshoes === wasasdas.findshoes)
-console.log(second)
+let second=arrPopelushka.find((firstElement)=>firstElement.fitshoes === wasasdas.findshoes);
+console.log(`your popelushku to find, her name is ${second.name}`);
 
