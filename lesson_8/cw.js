@@ -1,9 +1,26 @@
 // Взяти файл template_2.html та працювати в ньому
 // 1) Напишіть код, який :
 // a) додає клас з назвою групи, елементу з ід main_header
+
+
 // b) робить шириниу елементу ul 400px
+
+let width = document.body.getElementsByTagName('ul')
+console.log(width)
+width[0].style.width = '400px';
+
 // c) робить шириниу всіх елементів з класом linkList шириною 50%
+
+let widthLinkList =document.body.getElementsByClassName('linkList');
+// console.log(widthLinkList)
+for (const widthLinkListElement of widthLinkList) {
+    widthLinkListElement.style.width='50%';
+}
+
 // d) отримує текст який зберігається в елементі з класом listElement2
+
+
+
 // e) отримує всі елементи li та змінює ім колір фону на сірий
 // f) отримує всі елементи 'a' та додає їм клас anchor
 // g) отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
