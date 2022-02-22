@@ -21,7 +21,7 @@ document.body.append(block);
 
 // - клонувати його повністю, та додати клон в body.
 
-
+document.body.append(block.cloneNode(true));
 
 // - Є масив:
 //     ['Main','Products','About us','Contacts']
