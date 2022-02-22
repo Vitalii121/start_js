@@ -84,5 +84,5 @@ for (const allATagElement of allATag) {
 
 // m) отримати елементи з класом text2 та змінити їм текст на назву групи (mon-year. Пример sep-2021)
 
-let getText2 = document.body.getElementsByClassName('text2');
-getText2[0].innerText='dec-2021'
+let getText2 = document.body.getElementsByClassName('text2')[0];
+getText2.innerText='dec-2021'
