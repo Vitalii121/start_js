@@ -52,4 +52,4 @@ fetch('https://jsonplaceholder.typicode.com/comments')
             wrap.append(divCard);
             document.body.append(wrap);
         }
-    })
+    });
