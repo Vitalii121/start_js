@@ -1,0 +1,29 @@
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: black;
+}
+.cardPost{
+    box-sizing: border-box;
+    padding: 15px 20px;
+    width: 350px;
+    margin: 10px;
+    background-color: cornflowerblue;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.cardPost:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.wrap2{
+    background: burlywood;
+    margin-top: 40px;
+}
+.comment{
+    background-color: darkseagreen;
+    width: 450px;
+    border: 1px solid black;
+}
